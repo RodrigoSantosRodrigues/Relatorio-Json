@@ -1,0 +1,27 @@
+﻿<Window x:Class="Relatorio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Relatorio"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="1300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="154*"/>
+            <ColumnDefinition Width="477*"/>
+            <ColumnDefinition Width="462*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="146*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="41*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txt" Grid.ColumnSpan="2" HorizontalAlignment="Left" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" Height="318" TextChanged="txt_TextChanged" Grid.Column="2" Margin="41,71,0,0"/>
+        <Button Content="Dados Json" HorizontalAlignment="Left" Margin="138,0,0,245" Width="287" Click="Button_Click" Grid.Column="2" Height="44" VerticalAlignment="Bottom"/>
+        <Button Content="Agrupar Dados" Grid.Column="3" HorizontalAlignment="Left" Margin="193,440,0,0" VerticalAlignment="Top" Width="288" Height="44" Click="Button_Click_1" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="agrouped" Grid.Column="3" HorizontalAlignment="Left" Margin="80,71,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="504" Height="318" Grid.ColumnSpan="3" TextChanged="TextBox_TextChanged_1"/>
+
+
+    </Grid>
+</Window>
